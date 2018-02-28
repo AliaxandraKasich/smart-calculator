@@ -27,14 +27,13 @@ class SmartCalculator {
 
   devide(number) {
     this.str = this.str + "/" + number;
-    this.temp = namber;
+    this.temp = number;
     return this; 
   }
 
   pow(number) {
-    for(var i=0; i< number-1;i++){
-      this.str = this.str + "*" + this.temp;
-    }
+    
+    this.str = this.str + "**" + number;
     this.temp = number;
     return this; 
   }
